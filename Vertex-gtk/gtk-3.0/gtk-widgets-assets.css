@@ -1,6 +1,6 @@
 /*******************
  * Pane separators *
- *******************/
+ *******************//*
 .pane-separator {
   background-image: url("assets/pane-separator-grip.svg");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 
 .pane-separator.vertical:hover {
   background-image: url("assets/pane-separator-grip-vertical-prelight.svg");
-}
+}*/
 
 /*************************
  * Header bar separator  *
