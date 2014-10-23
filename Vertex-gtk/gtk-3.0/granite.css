@@ -13,7 +13,7 @@
   text-shadow: 0 1px 2px alpha (#000, 0.6);
 }
 
-.overlay-bar GtkLabel {
+.overlay-bar .label {
   color: white;
   text-shadow: 0 1px 2px alpha (#000, 0.6);
 }

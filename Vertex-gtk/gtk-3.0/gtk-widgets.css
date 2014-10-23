@@ -1534,7 +1534,7 @@ GtkSwitch {
 
 /*****************
  * Progress bars *
- *****************/
+ *****************//*FIXME*/
 GtkProgressBar {
   padding: 0;
   font-size: 83%;

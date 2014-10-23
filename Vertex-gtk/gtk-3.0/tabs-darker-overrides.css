@@ -1,10 +1,10 @@
-TerminalWindow .notebook .prelight-page GtkLabel,
-TerminalWindow .notebook tab .active-page GtkLabel,
-NautilusWindow .notebook tab .active-page GtkLabel,
-NemoWindow .notebook tab .active-page GtkLabel,
-EmpathyChatWindow .notebook tab .active-page GtkLabel,
-GeditWindow .notebook tab .active-page GtkLabel,
-EphyNotebook.notebook tab .active-page GtkLabel {
+TerminalWindow .notebook .prelight-page .label,
+TerminalWindow .notebook tab .active-page .label,
+NautilusWindow .notebook tab .active-page .label,
+NemoWindow .notebook tab .active-page .label,
+EmpathyChatWindow .notebook tab .active-page .label,
+GeditWindow .notebook tab .active-page .label,
+EphyNotebook.notebook tab .active-page .label {
   color: @dark_fg_color;
   text-shadow: 0 -1px @dark_wm_title_shadow;
   icon-shadow: 0 -1px @dark_wm_title_shadow;
@@ -113,7 +113,7 @@ TerminalWindow .notebook tab.top.reorderable-page:active {
   border-image: -gtk-scaled(url("borders/terminal-tab-active-darker.png"),url("borders/terminal-tab-active-darker@2.png")) 2 7 2 7 / 2px 7px 2px 7px stretch;
 }
 
-TerminalWindow .notebook tab GtkLabel {
+TerminalWindow .notebook tab .label {
   color: mix(@dark_fg_color, @dark_bg_color, 0.40);
   text-shadow: 0 -1px @dark_wm_title_shadow;
 }
