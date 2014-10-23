@@ -357,20 +357,16 @@ GtkSwitch.slider:insensitive {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-selected.png"), url("assets/radio-checked-insensitive-selected@2.png")); }
 
 /*Selectionmode*/
-GtkIconView.view.check,
-GtkFlowBox.view.check {
+.view.content-view.check {
   color: mix(@theme_fg_color, @theme_bg_color, 0.7);
   background-image: none;
   -gtk-icon-source: -gtk-icontheme("checkbox-checked-symbolic"); }
 
-GtkIconView.view.check:hover,
-GtkFlowBox.view.check:hover {
+.view.content-view.check:hover {
     color: mix(@theme_fg_color, @theme_bg_color, 0.4); }
 
-GtkIconView.view.check:active,
-GtkFlowBox.view.check:active,
-GtkIconView.view.check:checked,
-GtkFlowBox.view.check:checked {
+.view.content-view.check:active,
+.view.content-view.check:checked {
   color: @theme_selected_bg_color; }
 
 GtkCheckButton.text-button, GtkRadioButton.text-button {

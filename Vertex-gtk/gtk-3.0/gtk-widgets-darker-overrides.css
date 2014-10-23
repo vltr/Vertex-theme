@@ -557,9 +557,10 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
                                   shade(@dark_trough_bg_color_a, 0.9),
                                   shade(@dark_trough_bg_color_b, 0.8)); }
 
+/*FIXME*/
 /*****************
  * Color Chooser *
- *****************/
+ *****************//*
 .header-bar GtkColorSwatch,
 .toolbar GtkColorSwatch,
 .primary-toolbar GtkColorSwatch {
@@ -602,7 +603,7 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 .toolbar GtkColorButton.button GtkColorSwatch,
 .primary-toolbar GtkColorButton.button GtkColorSwatch {
   border-radius: 1.5px;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px alpha(white, 0.15); }
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px alpha(white, 0.15); }*/
 
 /**********************
  * Window Decorations *

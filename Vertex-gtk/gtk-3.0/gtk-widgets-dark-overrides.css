@@ -1,7 +1,7 @@
 .button, .button:hover, .button.flat:hover, .primary-toolbar .button:hover, .inline-toolbar GtkToolButton > .button,
 .inline-toolbar GtkToolButton > .button:hover, GtkComboBox, .titlebar.selection-mode .button.suggested-action, 
 GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selection-mode .button.suggested-action,
-.notebook tab GtkLabel, .sidebar, .sidebar .view, .spinbutton .button, .spinbutton .button:focus, .notebook tab .button, .menubar > .menuitem, .primary-toolbar .button.flat, .titlebar .subtitle, GtkCalendar.header .subtitle, .header-bar .subtitle {
+.notebook tab .label, .sidebar, .sidebar .view, .spinbutton .button, .spinbutton .button:focus, .notebook tab .button, .menubar > .menuitem, .primary-toolbar .button.flat, .titlebar .subtitle, GtkCalendar.header .subtitle, .header-bar .subtitle {
   text-shadow: 0 -1px alpha(black, 0.7);
   icon-shadow: 0 -1px alpha(black, 0.7);
 }
@@ -98,10 +98,11 @@ GtkPopover {
     box-shadow: 0 2px 8px 3px alpha(@wm_shadow, 0.4);
 }
 */
+/*FIXME*/
 /*****************
  * Color Chooser *
  *****************/
-GtkColorSwatch {
+/*GtkColorSwatch {
   border-color: @borders;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2); }
   GtkColorSwatch.color-light:hover {
@@ -110,14 +111,21 @@ GtkColorSwatch {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.2)); }
   GtkColorSwatch:hover {
     border-color: @borders; }
-    GtkColorSwatch.color-active-badge:hover {
-      background-image: none; }
-    GtkColorSwatch.color-active-badge.color-light, GtkColorSwatch.color-active-badge.color-light:hover {
-      color: rgba(0, 0, 0, 0.3);
-      border-color: rgba(0, 0, 0, 0.3); }
-    GtkColorSwatch.color-active-badge.color-dark, GtkColorSwatch.color-active-badge.color-dark:hover {
-      color: rgba(255, 255, 255, 0.5);
-      border-color: rgba(255, 255, 255, 0.5); }
+  GtkColorSwatch.image, GtkColorSwatch.image:hover {
+    border-width: 0px;
+    border-radius: 50%;
+    box-shadow: none;
+    background-image: none; }
+    GtkColorSwatch.image:selected, GtkColorSwatch.image:hover:selected {
+      border-width: 2px; }
+      GtkColorSwatch.image:selected.color-light, GtkColorSwatch.image:selected.color-light:hover, 
+      GtkColorSwatch.image:hover:selected.color-light, GtkColorSwatch.image:hover:selected.color-light:hover {
+        color: rgba(0, 0, 0, 0.3);
+        border-color: rgba(0, 0, 0, 0.3); }
+      GtkColorSwatch.image:selected.color-dark, GtkColorSwatch.image:selected.color-dark:hover, 
+      GtkColorSwatch.image:hover:selected.color-dark, GtkColorSwatch.image:hover:selected.color-dark:hover {
+        color: rgba(255, 255, 255, 0.5);
+        border-color: rgba(255, 255, 255, 0.5); }*/
 
 GtkColorButton.button GtkColorSwatch {
   border-radius: 1.5px;
