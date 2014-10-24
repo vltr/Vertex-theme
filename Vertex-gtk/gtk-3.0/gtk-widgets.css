@@ -735,6 +735,12 @@ GtkCalendar.header .button.titlebutton:visited {
   box-shadow: inset 1px 0 alpha(black, 0.1);
   icon-shadow: none; }
 
+.linked.vertical > .spinbutton .button:last-child:dir(rtl), .linked.vertical > .spinbutton .button:dir(rtl),
+.linked.vertical > .spinbutton .button:last-child:hover:dir(rtl), .linked.vertical > .spinbutton .button:hover:dir(rtl),
+.linked.vertical > .spinbutton .button:last-child:active:dir(rtl), .linked.vertical > .spinbutton .button:active:dir(rtl),
+.linked.vertical > .spinbutton .button:last-child:insensitive:dir(rtl), .linked.vertical > .spinbutton .button:insensitive:dir(rtl) {
+  box-shadow: inset -1px 0 alpha(black, 0.1); }
+
 .linked.vertical > .spinbutton .button:last-child:hover, .linked.vertical > .spinbutton .button:hover {
   color: alpha(@theme_fg_color, 0.5); }
 
