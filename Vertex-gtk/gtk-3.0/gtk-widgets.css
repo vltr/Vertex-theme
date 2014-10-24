@@ -1331,8 +1331,6 @@ GtkTreeView.view.trough:selected {
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.15), inset 1px 0 alpha(@borders, 0.5); }
     .notebook.header.left {
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.15), inset -1px 0 alpha(@borders, 0.5); }
-  .frame > .notebook.frame {
-    border: none; }
   .notebook tab {
     border-width: 1px;
     border-style: solid;
