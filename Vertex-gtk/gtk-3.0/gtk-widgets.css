@@ -721,6 +721,25 @@ GtkCalendar.header .button.titlebutton:visited {
                   inset 1px 2px alpha(@theme_selected_bg_color, 0.1),
                   inset -1px -1px alpha(@theme_selected_bg_color, 0.2) }
 
+/*special case spinbutton inside linked entries*/
+.linked.vertical > .spinbutton .button:last-child, .linked.vertical > .spinbutton .button,
+.linked.vertical > .spinbutton .button:last-child:hover, .linked.vertical > .spinbutton .button:hover,
+.linked.vertical > .spinbutton .button:last-child:active, .linked.vertical > .spinbutton .button:active,
+.linked.vertical > .spinbutton .button:last-child:insensitive, .linked.vertical > .spinbutton .button:insensitive {
+  border-image: none;
+  border-width: 0;
+  border-radius: 0;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: inset 1px 0 alpha(black, 0.1);
+  icon-shadow: none; }
+
+.linked.vertical > .spinbutton .button:last-child:hover, .linked.vertical > .spinbutton .button:hover {
+  color: alpha(@theme_fg_color, 0.5); }
+
+.linked.vertical > .spinbutton .button:last-child:active, .linked.vertical > .spinbutton .button:active {
+  color: alpha(@theme_fg_color, 0.7); }
+
 /**************
  * ComboBoxes *
  **************/
