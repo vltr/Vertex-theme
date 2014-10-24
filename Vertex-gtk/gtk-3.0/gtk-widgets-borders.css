@@ -38,6 +38,49 @@
   border-top-left-radius: 0;
 }
 
+.linked.vertical .entry, 
+.linked.vertical .entry:insensitive {
+  border-image: -gtk-scaled(url("borders/middle-vertical-entry-border.png"),url("borders/middle-vertical-entry-border@2.png")) 1 2 1 2 / 1px 2px 1px 2px stretch;
+  border-radius: 0;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.linked.vertical .entry:focus {
+  border-image: -gtk-scaled(url("borders/middle-vertical-entry-border-focused.png"),url("borders/middle-vertical-entry-border-focused@2.png")) 2 3 2 3 / 2px 3px 2px 3px stretch;
+}
+
+.linked.vertical .entry:first-child, 
+.linked.vertical .entry:first-child:insensitive, 
+.linked.vertical > GtkComboBox.combobox-entry .entry:first-child,
+.linked.vertical > GtkComboBox.combobox-entry .entry:first-child:insensitive {
+  border-image: -gtk-scaled(url("borders/top-vertical-entry-border.png"),url("borders/top-vertical-entry-border@2.png")) 2 2 1 2 / 2px 2px 1px 2px stretch;
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.linked.vertical .entry:first-child:focus, 
+.linked.vertical > GtkComboBox.combobox-entry .entry:first-child:focus {
+  border-image: -gtk-scaled(url("borders/top-vertical-entry-border-focused.png"),url("borders/top-vertical-entry-border-focused@2.png")) 3 3 2 3 / 3px 3px 2px 3px stretch;
+}
+
+.linked.vertical .entry:last-child, 
+.linked.vertical .entry:last-child:insensitive,
+.linked.vertical > GtkComboBox.combobox-entry .entry:last-child,
+.linked.vertical > GtkComboBox.combobox-entry .entry:last-child:insensitive {
+  border-image: -gtk-scaled(url("borders/bottom-vertical-entry-border.png"),url("borders/bottom-vertical-entry-border@2.png")) 1 2 3 2 / 1px 2px 3px 2px stretch;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.linked.vertical .entry:last-child:focus, 
+.linked.vertical > GtkComboBox.combobox-entry .entry:last-child:focus {
+  border-image: -gtk-scaled(url("borders/bottom-vertical-entry-border-focused.png"),url("borders/bottom-vertical-entry-border-focused@2.png")) 2 3 4 3 / 2px 3px 4px 3px stretch;
+}
+
 /*Buttons*/
 .button,
 .button.flat:hover,

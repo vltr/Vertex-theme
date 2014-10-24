@@ -18,6 +18,12 @@ bottom-vertical-button-border
 top-vertical-button-active-border
 middle-vertical-button-active-border
 bottom-vertical-button-active-border
+top-vertical-entry-border
+middle-vertical-entry-border
+bottom-vertical-entry-border
+top-vertical-entry-border-focused
+middle-vertical-entry-border-focused
+bottom-vertical-entry-border-focused
 generic-border
 generic-border-focused
 tooltip-generic-border
@@ -57,6 +63,12 @@ bottom-vertical-button-border-dark
 top-vertical-button-active-border-dark
 middle-vertical-button-active-border-dark
 bottom-vertical-button-active-border-dark
+top-vertical-entry-border-dark
+middle-vertical-entry-border-dark
+bottom-vertical-entry-border-dark
+top-vertical-entry-border-focused-dark
+middle-vertical-entry-border-focused-dark
+bottom-vertical-entry-border-focused-dark
 generic-border-dark
 generic-border-focused-dark
 trough-border-dark

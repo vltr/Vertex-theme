@@ -211,6 +211,15 @@ GtkTextView {
       box-shadow: inset 0 1px @entry_inset; }
       .linked .entry:last-child:dir(rtl):insensitive, GtkComboBox.combobox-entry .entry:last-child:dir(rtl):insensitive {
         box-shadow: none; }
+  .linked.vertical .entry {
+    box-shadow: none; }
+    .linked.vertical .entry:first-child, .linked.vertical > GtkComboBox.combobox-entry .entry:first-child {
+      box-shadow: inset 0 1px @entry_inset; }
+    .linked.vertical .entry:last-child, .linked.vertical > GtkComboBox.combobox-entry .entry:last-child {
+      box-shadow: none; }
+  .linked.vertical .entry:insensitive, .linked.vertical .entry:first-child:insensitive, .linked.vertical > GtkComboBox.combobox-entry .entry:first-child:insensitive,
+  .linked.vertical .entry:last-child:insensitive, .linked.vertical > GtkComboBox.combobox-entry .entry:last-child:insensitive {
+    box-shadow: none; }
   .entry.error {
     color: @error_color; }
     .entry.error:focus {
