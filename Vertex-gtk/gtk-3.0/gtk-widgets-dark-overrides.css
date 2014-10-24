@@ -31,6 +31,10 @@ GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selectio
                                     mix(@theme_selected_bg_color, @theme_base_color, 0.3));
 }
 
+/*Circular button*/
+.button.circular-button {
+  border: 1px solid alpha(black, 0.6); }
+
 /*********
  * Lists *
  *********/
