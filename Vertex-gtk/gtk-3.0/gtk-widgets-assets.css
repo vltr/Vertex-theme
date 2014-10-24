@@ -144,7 +144,6 @@ GtkCalendar.header > GtkBox > .separator.vertical,
 .scrollbar.trough {
   border-image: -gtk-scaled(url("assets/scrollbar-trough.png"),url("assets/scrollbar-trough@2.png"))  8 7 8 8 / 8px 7px 8px 8px;
 	border-width: 8px 7px 8px 8px;
-  background-color: transparent;
   border-radius: 0;
 }
 
@@ -156,7 +155,6 @@ GtkCalendar.header > GtkBox > .separator.vertical,
 .scrollbar.slider {
   border-image: -gtk-scaled(url("assets/scrollbar-slider.png"),url("assets/scrollbar-slider@2.png")) 8 7 8 8 / 8px 7px 8px 8px;
   border-width: 8px 7px 8px 8px;
-  background-color: transparent;
   border-radius: 0;
 }
 
