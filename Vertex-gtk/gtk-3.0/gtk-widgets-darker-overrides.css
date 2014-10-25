@@ -560,7 +560,9 @@ GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar {
 /*****************
  * Color Chooser *
  *****************/
-GtkColorSwatch.overlay {
+.header-bar GtkColorSwatch.overlay,
+.toolbar GtkColorSwatch.overlay,
+.primary-toolbar GtkColorSwatch.overlay {
   border: 1px solid black; }
 
 .header-bar GtkColorButton.button GtkColorSwatch,
