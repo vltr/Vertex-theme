@@ -35,6 +35,20 @@ GtkCalendar.selection-mode.header .button.suggested-action, .header-bar.selectio
 .button.circular-button {
   border: 1px solid alpha(black, 0.6); }
 
+/* Overlay scrollbars */
+.scrollbar.overlay-indicator.dragging.trough,
+.scrollbar.overlay-indicator.hovering.trough {
+  border-color: rgba(0, 0, 0, 0.12); }
+
+.scrollbar.overlay-indicator.slider {
+  background-color: alpha(white, 0.25); }
+
+.scrollbar.overlay-indicator.slider:hover {
+  background-color: alpha(white, 0.35); }
+
+.scrollbar.overlay-indicator.slider:active {
+  background-color: alpha(white, 0.15); }
+
 /*********
  * Lists *
  *********/

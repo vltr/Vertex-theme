@@ -1138,7 +1138,7 @@ GtkTreeView.view.trough:selected {
 .monospace {
   font: Monospace; }
 
-/* Overlay scrollbars */ /*FIXME*/
+/* Overlay scrollbars */
 .scrollbar.overlay-indicator.dragging,
 .scrollbar.overlay-indicator.hovering {
   -GtkRange-slider-width: 15; }
@@ -1150,12 +1150,33 @@ GtkTreeView.view.trough:selected {
 
 .sidebar .scrollbar.overlay-indicator,
 .scrollbar.overlay-indicator {
-  -GtkRange-slider-width: 15; }
+  -GtkRange-slider-width: 11; }
 
 .sidebar .scrollbar.overlay-indicator .trough,
 .scrollbar.overlay-indicator.trough {
+  border-image: none; }
+
+.scrollbar.overlay-indicator.slider,
+.scrollbar.overlay-indicator.slider:hover,
+.scrollbar.overlay-indicator.slider:active {
   border-image: none;
-  /*border-color: rgba(0, 0, 0, 0.02);*/ }
+  border-width: 3px;
+  border-color: transparent;
+  border-radius: 5.5px;
+  background-image: none; }
+
+.scrollbar.overlay-indicator.dragging.slider,
+.scrollbar.overlay-indicator.hovering.slider {
+  border-radius: 7.5px; }
+
+.scrollbar.overlay-indicator.slider {
+  background-color: alpha(black, 0.25); }
+
+.scrollbar.overlay-indicator.slider:hover {
+  background-color: alpha(black, 0.17); }
+
+.scrollbar.overlay-indicator.slider:active {
+  background-color: alpha(black, 0.35); }
 
 /***************
  * Popovers   *
