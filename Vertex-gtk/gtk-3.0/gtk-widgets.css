@@ -66,11 +66,6 @@
   border: 1px solid @theme_selected_bg_color;
   background-color: alpha(@theme_selected_bg_color, 0.2); }
 
-/* This is used by GtkScrolledWindow, when rendering the edge
- * gradient shown when content is touch-dragged past boundaries.
- * The color is used as a base for such gradient, which is then
- * stretched/modified as a direct result of user interaction.
- */
 .overshoot.top {
   background: linear-gradient(to top, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
   background-size: auto 100px;
@@ -629,6 +624,7 @@ GtkCalendar.header .button.titlebutton:visited {
   text-shadow: none; }
   .button:link:hover, .button:link:active, .button:link:checked, .button:visited:hover, .button:visited:active, .button:visited:checked {
     text-shadow: none; }
+
 /*****************
  * GtkSpinButton *
  *****************/
