@@ -1160,7 +1160,7 @@ GtkTreeView.view.trough:selected {
   border: 1px solid darker(@theme_base_color);
   border-radius: 3px;
   background-color: shade(@theme_base_color, 0.98);
-  box-shadow: 0 1px 5px @wm_shadow;
+  box-shadow: 0 1px 3px @wm_shadow;
   text-shadow: none;
   icon-shadow: none; }
   .popover > .list, 
