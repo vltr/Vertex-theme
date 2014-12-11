@@ -1435,7 +1435,7 @@ GtkTreeView.view.trough:selected {
 .scrollbar.overlay-indicator.dragging.trough,
 .scrollbar.overlay-indicator.hovering.trough {
   border-image: none;
-  border-color: rgba(0, 0, 0, 0.07); }
+  border-color: rgba(0, 0, 0, 0.1); }
 
 .sidebar .scrollbar.overlay-indicator,
 .scrollbar.overlay-indicator {
@@ -1459,13 +1459,13 @@ GtkTreeView.view.trough:selected {
   border-radius: 7.5px; }
 
 .scrollbar.overlay-indicator.slider {
-  background-color: alpha(black, 0.25); }
+  background-color: alpha(black, 0.4); }
 
 .scrollbar.overlay-indicator.slider:hover {
-  background-color: alpha(black, 0.17); }
+  background-color: alpha(black, 0.4); }
 
 .scrollbar.overlay-indicator.slider:active {
-  background-color: alpha(black, 0.35); }
+  background-color: alpha(black, 0.6); }
 
 /**********
  * Switch *
