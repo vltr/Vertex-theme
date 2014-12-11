@@ -68,20 +68,24 @@
 
 .overshoot.top {
   background: linear-gradient(to top, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
-  background-size: auto 100px;
-  background-position: center 100%; }
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
+  background-position: center top; }
 .overshoot.bottom {
   background: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
-  background-size: auto 100px;
-  background-position: center 0%; }
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
+  background-position: center bottom;  }
 .overshoot.left {
   background: linear-gradient(to left, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
-  background-size: 100px auto;
-  background-position: 100% center; }
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+  background-position: left center;  }
 .overshoot.right {
   background: linear-gradient(to right, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
-  background-size: 100px auto;
-  background-position: 0% center; }
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+  background-position: right center;  }
 
 .undershoot.top {
   box-shadow: inset 0 6px 4px -4px rgba(0, 0, 0, 0.1);
