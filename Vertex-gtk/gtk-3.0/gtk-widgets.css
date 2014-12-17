@@ -66,40 +66,6 @@
   border: 1px solid @theme_selected_bg_color;
   background-color: alpha(@theme_selected_bg_color, 0.2); }
 
-.overshoot.top {
-  background: linear-gradient(to top, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
-  background-size: 100% 20%;
-  background-repeat: no-repeat;
-  background-position: center top; }
-.overshoot.bottom {
-  background: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
-  background-size: 100% 20%;
-  background-repeat: no-repeat;
-  background-position: center bottom;  }
-.overshoot.left {
-  background: linear-gradient(to left, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
-  background-size: 20% 100%;
-  background-repeat: no-repeat;
-  background-position: left center;  }
-.overshoot.right {
-  background: linear-gradient(to right, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
-  background-size: 20% 100%;
-  background-repeat: no-repeat;
-  background-position: right center;  }
-
-.undershoot.top {
-  box-shadow: inset 0 6px 4px -4px rgba(0, 0, 0, 0.1);
-  background: none; }
-.undershoot.bottom {
-  box-shadow: inset 0 -6px 4px -4px rgba(0, 0, 0, 0.1);
-  background: none; }
-.undershoot.left {
-  box-shadow: inset 6px 0 4px -4px rgba(0, 0, 0, 0.1);
-  background: none; }
-.undershoot.right {
-  box-shadow: inset -6px 0 4px -4px rgba(0, 0, 0, 0.1);
-  background: none; }
-
 .label.separator {
   color: alpha(@theme_fg_color, 0.8); }
   .label:insensitive {
@@ -1129,6 +1095,7 @@ GtkTreeView.view.trough:selected {
 .menuitem .accelerator {
   color: alpha(currentColor,0.7); }
 
+/* Decouple the font of context menus from their entry/textview */
 .touch-selection,
 .context-menu {
     font: initial;
@@ -1136,6 +1103,42 @@ GtkTreeView.view.trough:selected {
 
 .monospace {
   font: Monospace; }
+
+.overshoot.top {
+  background: linear-gradient(to top, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
+  background-position: center top; }
+.overshoot.bottom {
+  background: linear-gradient(to bottom, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
+  background-position: center bottom;  }
+.overshoot.left {
+  background: linear-gradient(to left, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+  background-position: left center;  }
+.overshoot.right {
+  background: linear-gradient(to right, alpha(@theme_selected_bg_color, 0.0), alpha(@theme_selected_bg_color, 0.2));
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+  background-position: right center;  }
+
+.undershoot.top {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), transparent 4px, transparent); }
+.undershoot.bottom {
+  background-color: transparent;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), transparent 4px, transparent); }
+.undershoot.left {
+  background-color: transparent;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.07), transparent 3px, transparent); }
+.undershoot.right {
+  background-color: transparent;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.07), transparent 3px, transparent); }
+.undershoot.sidebar {
+  background-color: transparent; }
 
 /***************
  * Popovers   *
