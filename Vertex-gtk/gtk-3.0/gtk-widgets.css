@@ -2166,6 +2166,8 @@ GtkVolumeButton.button {
     border-radius: 0; }
   .window-frame.popup {
     box-shadow: none; }
+  .window-frame.ssd {
+    box-shadow: 0 0 0 1px @window_frame; } /*just doing borders, wm draws actual shadows*/
   .window-frame.csd.popup {
     border-radius: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.12); }
