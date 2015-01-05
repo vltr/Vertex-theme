@@ -225,17 +225,14 @@ GtkTextView {
   text-shadow: 0 1px @highlight_shadow;
   icon-shadow: 0 1px @highlight_shadow; }
   .button.flat, .header-bar .titlebutton.button,
-  .titlebar .titlebutton.button,
-  GtkCalendar.header .titlebutton.button {
+  .titlebar .titlebutton.button {
     transition: none; }
     .button.flat:hover, .header-bar .titlebutton.button:hover,
-    .titlebar .titlebutton.button:hover,
-    GtkCalendar.header .titlebutton.button:hover {
+    .titlebar .titlebutton.button:hover {
       transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transition-duration: 500ms; }
       .button.flat:hover:active, .header-bar .titlebutton.button:hover:active,
-      .titlebar .titlebutton.button:hover:active,
-      GtkCalendar.header .titlebutton.button:hover:active {
+      .titlebar .titlebutton.button:hover:active {
         transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   .button:focus { outline-color: transparent; }
   .button:hover, .button.flat:hover, .primary-toolbar .button:hover,
@@ -542,22 +539,18 @@ GtkCalendar.button, .header-bar GtkCalendar.button.titlebutton,
     text-shadow: 0 -1px alpha(@button_active_text_shadow, 0.7); }
 
 GtkColorButton.button, .header-bar GtkColorButton.button.titlebutton,
-.titlebar GtkColorButton.button.titlebutton,
-GtkCalendar.header GtkColorButton.button.titlebutton {
+.titlebar GtkColorButton.button.titlebutton {
   padding: 5px; }
   GtkColorButton.button GtkColorSwatch, .header-bar GtkColorButton.button.titlebutton GtkColorSwatch,
-  .titlebar GtkColorButton.button.titlebutton GtkColorSwatch,
-  GtkCalendar.header GtkColorButton.button.titlebutton GtkColorSwatch {
+  .titlebar GtkColorButton.button.titlebutton GtkColorSwatch {
   border-radius: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px @highlight_shadow; }
   GtkColorButton.button:active GtkColorSwatch, .header-bar GtkColorButton.button.titlebutton:active GtkColorSwatch,
-  .titlebar GtkColorButton.button.titlebutton GtkColorSwatch:active,
-  GtkCalendar.header GtkColorButton.button.titlebutton:active GtkColorSwatch:active {
+  .titlebar GtkColorButton.button.titlebutton GtkColorSwatch:active {
   border-radius: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px alpha(@highlight_shadow, 0.2); }
     GtkColorButton.button GtkColorSwatch:insensitive, .header-bar GtkColorButton.button.titlebutton GtkColorSwatch:insensitive,
-    .titlebar GtkColorButton.button.titlebutton GtkColorSwatch:insensitive,
-    GtkCalendar.header GtkColorButton.button.titlebutton GtkColorSwatch:insensitive {
+    .titlebar GtkColorButton.button.titlebutton GtkColorSwatch:insensitive {
        box-shadow: none; }
 
 /*some padding*/
@@ -577,12 +570,10 @@ GtkCalendar.header GtkColorButton.button.titlebutton {
  * Links *
  *********//*FIXME*/
 *:link, .button:link, .header-bar .button.titlebutton:link,
-.titlebar .button.titlebutton:link,
-GtkCalendar.header .button.titlebutton:link {
+.titlebar .button.titlebutton:link {
   color: @link_color; }
   *:link:visited, .button:visited, .header-bar .button.titlebutton:visited,
-  .titlebar .button.titlebutton:visited,
-  GtkCalendar.header .button.titlebutton:visited {
+  .titlebar .button.titlebutton:visited {
     color: shade(@link_color, 0.8); }
     *:selected *:link:visited, *:selected .button:visited {
       color: #b6d2ef; }
@@ -600,9 +591,8 @@ GtkCalendar.header .button.titlebutton:link {
 
 .button:link, .header-bar .button.titlebutton:link,
 .titlebar .button.titlebutton:link,
-GtkCalendar.header .button.titlebutton:link, .button:visited, .header-bar .button.titlebutton:visited,
-.titlebar .button.titlebutton:visited,
-GtkCalendar.header .button.titlebutton:visited {
+.button:visited, .header-bar .button.titlebutton:visited,
+.titlebar .button.titlebutton:visited {
   text-shadow: none; }
   .button:link:hover, .button:link:active, .button:link:checked, .button:visited:hover, .button:visited:active, .button:visited:checked {
     text-shadow: none; }
@@ -1814,12 +1804,10 @@ GtkScrolledWindow GtkViewport.frame {
       color: @button_active_text; }
 
 .list-row, list-row.button, .header-bar list-row.button.titlebutton,
-.titlebar list-row.button.titlebutton,
-GtkCalendar.header list-row.button.titlebutton {
+.titlebar list-row.button.titlebutton {
   transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   .list-row:hover, list-row.button:hover, .header-bar list-row.button.titlebutton:hover,
-  .titlebar list-row.button.titlebutton:hover,
-  GtkCalendar.header list-row.button.titlebutton:hover {
+  .titlebar list-row.button.titlebutton:hover {
     transition: none; }
 
 /*********************
